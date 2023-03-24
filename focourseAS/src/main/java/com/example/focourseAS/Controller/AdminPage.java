@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("/adminpage")
 @RestController
 public class AdminPage {
@@ -43,7 +44,6 @@ public class AdminPage {
     }
 
     @PostMapping
-
     public void saveCApiUser(@RequestBody ApiUser apiUser){
      apiService.saveApiUser(apiUser);
         System.out.println("Added Successfully");

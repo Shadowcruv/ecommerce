@@ -10,14 +10,14 @@ public class ApiRole {
 
     @javax.persistence.Id
     @SequenceGenerator(
-            name = "student_sequence",
-            sequenceName = "student_sequence",
+            name = "apiRole_sequence",
+            sequenceName = "apiRole_sequence",
             allocationSize = 1
     )
 
     @GeneratedValue(
             strategy = GenerationType.SEQUENCE,
-            generator =  "student_sequence"
+            generator =  "apiRole_sequence"
     )
     private Long id;
     private String name;

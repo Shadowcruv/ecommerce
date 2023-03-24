@@ -8,14 +8,14 @@ import java.util.Collection;
 public class ApiUser {
     @javax.persistence.Id
     @SequenceGenerator(
-            name = "student_sequence",
-            sequenceName = "student_sequence",
+            name = "apiUser_sequence",
+            sequenceName = "apiUser_sequence",
             allocationSize = 1
     )
 
     @GeneratedValue(
             strategy = GenerationType.SEQUENCE,
-            generator =  "student_sequence"
+            generator =  "apiUser_sequence"
     )
 
     private Long Id;
